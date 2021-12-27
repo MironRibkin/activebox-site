@@ -1,0 +1,142 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background: rgba(37, 43, 73, 0.7);
+    /*position: relative;*/
+}
+
+.header__wrapper {
+    display: flex;
+    max-width: 1170px;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border-bottom: 1px solid #BABBC5;
+    margin: 0 auto;
+}
+
+.header-text__wrapper {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.header-text__mobile {
+    background: #252B49;
+    background: url("../image/bg_header.png") no-repeat;
+    height: 85vh;
+    width: 100%;
+    display: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    position: absolute;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    right: 0;
+    top: 100px;
+}
+
+
+.header-text__wrapper > a:active {
+    color: #E71414;
+}
+
+.header-text__wrapper > a {
+    min-width: 112px;
+    max-width: 134px;
+    text-align: center;
+    height: 100%;
+    padding: 43px 0;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.header-button__mobile {
+    cursor: pointer;
+}
+
+#header-switch:checked + label > .lines {
+    display: none;
+}
+
+#header-switch + label > .lines {
+    display: block;
+}
+
+#header-switch:checked + label > .cross {
+    display: block;
+}
+
+#header-switch + label > .cross {
+    display: none;
+}
+
+
+.header__selected {
+    border-bottom: 2px solid #BABBC5;
+}
+
+.header-button__mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .header__wrapper {
+        width: 95%;
+    }
+
+    .header__logo {
+        margin-left: 20px;
+        width: 231px;
+    }
+
+    .header-text__wrapper {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .header-text__wrapper > span {
+        max-width: 112px;
+        min-width: 122px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__wrapper {
+        border: none;
+    }
+
+    .header-text__wrapper > a {
+        display: none;
+    }
+
+    .header__logo {
+        max-width: 200px;
+        min-width: 130px;
+    }
+
+    .header-button__mobile {
+        display: block;
+        background: none;
+        cursor: pointer;
+    }
+}

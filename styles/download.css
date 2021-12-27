@@ -1,0 +1,74 @@
+
+.download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.download-wrapper {
+    width: 1170px;
+    /*height: 224px;*/
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+}
+
+.download__tittle {
+    font-family: Raleway;
+    text-transform: uppercase;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.download__subtitle {
+    font-family: Raleway;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 15px;
+}
+
+.download__button {
+    margin-top: 48px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .download-wrapper {
+        padding: 0 20px;
+
+    }
+
+    .download__tittle {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .download__subtitle {
+        font-size: 13px;
+        line-height: 15px;
+        margin-top: 10px;
+    }
+
+    .download__button {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        padding: 30px 40px;
+    }
+}

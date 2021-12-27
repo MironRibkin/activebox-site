@@ -1,0 +1,119 @@
+
+.gallery {
+    height: 40vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+
+}
+
+.gallery__item {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+
+
+.gallery__item-1 {
+    background-image: url("../image/work_1.png");
+}
+
+.gallery__item-2 {
+    background-image: url("../image/work_2.png");
+}
+
+.gallery__item-3 {
+    background-image: url("../image/work3s.png");
+}
+
+.gallery__item-4 {
+    background-image: url("../image/work_4.png");
+}
+
+.gallery__item-5 {
+    background-image: url("../image/work_5.png");
+}
+
+.gallery__item-6 {
+    background-image: url("../image/work_6.png");
+}
+
+.gallery__item-7 {
+    background-image: url("../image/work_7.png");
+}
+
+.gallery__item-8 {
+    background-image: url("../image/work_8.png");
+}
+
+
+.gallery__item:hover .gallery__item-hidden {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.gallery__item-hidden {
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(255, 67, 67, 0.8);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+
+.gallery__item-hidden:active {
+    background: rgba(185, 12, 12, 0.8);
+    border: 2px solid #FFFFFF;
+    transition: 0s;
+}
+
+.hidden__title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+
+}
+
+.hidden__subtitle {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .hidden__title {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 0;
+    }
+
+    .hidden__subtitle {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .gallery {
+        height: 200vw;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
